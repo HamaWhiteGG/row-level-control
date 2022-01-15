@@ -1,4 +1,4 @@
-# 基于Alibaba Druid 做行级数据权限控制
+ # 基于Alibaba Druid 做行级数据权限控制
 
 
 
@@ -14,13 +14,13 @@ SQL 抽象语法树遍历，在限制访问表的 SQL 对应层级添加 `WHERE`
 - Oracle
 - PostgreSQL
 
-####2.2 支持的SQL语法
+#### 2.2 支持的SQL语法
 
 - 查询语句 select
 - 删除语句 delete ...
 - 更新语句 update ...
 
-###三、快速开始
+### 三、快速开始
 
 #### 3.1 QuickStart
 
@@ -90,7 +90,7 @@ public class QuickStart {
 
 直接运行测试套件SuiteTest
 
-###四、核心代码
+### 四、核心代码
 
 以MysqlRowLevelControlVisitor中的select语句为例，继承MySqlASTVisitorAdapter，只需要重写 boolean visit(SQLExprTableSource reference) 方法即可，只要大约20行左右代码便可实现select的行级权限控制。
 
@@ -131,7 +131,7 @@ public class MysqlRowLevelControlVisitor extends MySqlASTVisitorAdapter {
 
 ```
 
-###五、完整测试报告
+### 五、完整测试报告
 #### 5.1 Mysql 测试报告
 
 ```
